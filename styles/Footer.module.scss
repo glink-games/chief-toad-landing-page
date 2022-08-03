@@ -1,0 +1,21 @@
+@import '../styles/variables.module.scss';
+@import '../styles/mixin.module.scss';
+
+.container {
+  position: relative;
+  width: 100vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  & img {
+    height: 4rem;
+    margin: 0 2rem;
+  }
+}

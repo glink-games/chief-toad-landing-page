@@ -1,0 +1,80 @@
+@import '../styles/variables.module.scss';
+@import '../styles/mixin.module.scss';
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 4;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100vw;
+
+  padding: 5rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+  background-color: transparent;
+
+  @include l {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  &_sub {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.nav {
+  &_social {
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    & li {
+      margin-left: 1.2rem;
+      margin-right: 1.2rem;
+      cursor: pointer;
+
+      @include xl {
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+
+      & a {
+        & svg {
+          fill: white;
+          transition: all 0.5s ease;
+          height: 1.8rem;
+
+          @include xl {
+            height: 2.5rem;
+          }
+        }
+
+        &:hover {
+          & svg {
+            fill: #fdf695;
+          }
+        }
+      }
+    }
+  }
+}

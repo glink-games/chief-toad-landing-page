@@ -1,0 +1,363 @@
+@import '../styles/variables.module.scss';
+@import '../styles/mixin.module.scss';
+
+.container {
+  position: relative;
+  width: 100vw;
+  min-height: calc(100vh - 3.8rem);
+
+  background-color: #fcf6ef;
+
+  @include l {
+    height: calc(100vh - 6.1rem);
+    min-height: auto;
+    width: 100vw;
+  }
+}
+
+.red_trap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  max-width: 37.5rem;
+  width: 95vw;
+  transform: scaleX(-1);
+
+  @include l {
+    width: 50vw;
+    max-width: 55rem;
+    max-height: 55rem;
+
+    @include tall-l {
+      max-width: 72rem;
+      max-height: 72rem;
+    }
+
+    @include tall-xl {
+      max-width: 86rem;
+      max-height: 86rem;
+    }
+
+    @include tall-xxl {
+      max-width: 94rem;
+      max-height: 94rem;
+    }
+  }
+}
+
+.female {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+
+  width: 95vw;
+  max-width: 37.5rem;
+  transform: scaleX(-1);
+
+  @include l {
+    width: 44vw;
+    max-width: 50rem;
+    max-height: 50rem;
+
+    @include tall-l {
+      max-width: 60rem;
+      max-height: 60rem;
+    }
+
+    @include tall-xl {
+      max-width: 70rem;
+      max-height: 70rem;
+    }
+
+    @include tall-xxl {
+      max-width: 85rem;
+      max-height: 85rem;
+    }
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  // justify-content: flex-start;
+  justify-content: flex-end;
+
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  padding-top: calc(6.2rem + 3rem);
+  padding-bottom: 40rem;
+
+  @include l {
+    padding-top: calc(7.8rem + 7rem);
+    padding-bottom: 0;
+    // margin-left: 40%;
+    margin-right: 5vw;
+    width: 50%;
+  }
+
+  & h2 {
+    font-family: 'HelveticaNeueExtraBold';
+    font-size: 4rem;
+    color: $black;
+    margin-bottom: 3.2rem;
+
+    // @include l {
+    //   font-size: 6rem;
+    //   margin-bottom: 6rem;
+    // }
+
+    // @include xl {
+    //   font-size: 8rem;
+    //   margin-bottom: 6rem;
+    // }
+
+    // @include xxl {
+    //   font-size: 9.6rem;
+    //   margin-bottom: 6rem;
+    // }
+
+    @include l {
+      @include tall-l {
+        font-size: 6rem;
+        margin-bottom: 3rem;
+      }
+
+      @include tall-xl {
+        font-size: 6rem;
+        margin-bottom: 5rem;
+      }
+
+      @include tall-xxl {
+        font-size: 9.6rem;
+        margin-bottom: 6rem;
+      }
+    }
+  }
+}
+
+.mintingBox {
+  border-radius: 1rem;
+  background-color: white;
+  padding-bottom: 2rem;
+  border: 0.1rem solid #e5e5e5;
+
+  width: 25.5rem;
+
+  @include l {
+    width: 44rem;
+    padding-bottom: 2rem;
+  }
+
+  &_header {
+    background-color: #f7f7f7;
+
+    & p {
+      font-family: 'Inter', sans-serif;
+      color: $black;
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 1.4rem;
+
+      @include l {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &_field {
+      background-color: #f7f7f7;
+      border-radius: 1rem;
+      font-family: 'Inter', sans-serif;
+      color: $black;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      width: 19.9rem;
+      font-size: 2.4rem;
+      border: 0.1rem solid #e5e5e5;
+
+      @include l {
+        width: 25rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        font-size: 2.4rem;
+      }
+    }
+
+    &_field_copy {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: #f7f7f7;
+      border-radius: 1rem;
+      font-family: 'Inter', sans-serif;
+      color: $black;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      width: 19.9rem;
+      font-size: 2.4rem;
+      border: 0.1rem solid #e5e5e5;
+
+      cursor: default;
+
+      & svg {
+        cursor: pointer;
+      }
+
+      @include l {
+        width: 25rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        font-size: 2.4rem;
+      }
+    }
+
+    &_action {
+      width: 90%;
+      border-top: 0.1rem solid #a0a0a0;
+      padding-top: 1.3rem;
+
+      @include l {
+        padding-top: 1.9rem;
+      }
+
+      &_price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        & p {
+          &:first-child {
+            font-family: 'Inter', sans-serif;
+            color: #636770;
+            letter-spacing: 0.05em;
+            font-size: 1.4rem;
+
+            @include l {
+              font-size: 2.4rem;
+            }
+          }
+
+          &:last-child {
+            font-family: 'Inter', sans-serif;
+            color: $black;
+            letter-spacing: 0.05em;
+            font-size: 1.4rem;
+
+            @include l {
+              font-size: 2.4rem;
+            }
+          }
+        }
+      }
+
+      & button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        font-family: 'Inter', sans-serif;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        border: none;
+        background-color: $black;
+        color: $white;
+        // padding-top: 1.1rem;
+        // padding-bottom: 0.8rem;
+        font-size: 1.6rem;
+        border-radius: 1rem;
+        height: 4.9rem;
+
+        & a {
+          &:hover {
+            color: #b44044;
+          }
+        }
+
+        &:hover {
+          color: #b44044;
+        }
+
+        @include l {
+          // padding-top: 1.3rem;
+          // padding-bottom: 1.6rem;
+          font-size: 2.8rem;
+          height: 7.1rem;
+        }
+      }
+    }
+
+    &_error {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      & p {
+        font-family: 'Inter', sans-serif;
+        color: $grey;
+        font-size: 1.2rem;
+
+        @include l {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+.networkBox {
+  border-radius: 1rem;
+  background-color: white;
+  padding: 2rem;
+  border: 0.1rem solid #e5e5e5;
+
+  width: 25.5rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  @include l {
+    width: 44rem;
+  }
+
+  & p {
+    font-family: 'Inter', sans-serif;
+    color: $black;
+    font-size: 1.2rem;
+
+    @include l {
+      font-size: 1.6rem;
+    }
+  }
+}

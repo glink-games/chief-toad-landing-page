@@ -1,0 +1,25 @@
+@import 'styles/variables.module.scss';
+@import '../styles/mixin.module.scss';
+
+.container {
+  position: relative;
+  background-color: #0d060d;
+  min-height: 100vh;
+  width: 100vw;
+
+  &_sub {
+    background-color: #0d060d;
+    min-height: 100vh;
+    width: 100vw;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+}

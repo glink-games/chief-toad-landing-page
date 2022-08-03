@@ -1,0 +1,89 @@
+@import '../styles/variables.module.scss';
+
+// Small devices
+@mixin s {
+  @media (min-width: #{$screen-s}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin m {
+  @media (min-width: #{$screen-m}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin l {
+  @media (min-width: #{$screen-l}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xxl {
+  @media (min-width: #{$screen-xxl}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xxxl {
+  @media (min-width: #{$screen-xxxl}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xxxxl {
+  @media (min-width: #{$screen-xxxxl}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin max {
+  @media (min-width: #{$screen-max}) {
+    @content;
+  }
+}
+
+@mixin tall-l {
+  @media (min-height: #{$screen-tall-l}) {
+    @content;
+  }
+}
+
+@mixin tall-xl {
+  @media (min-height: #{$screen-tall-xl}) {
+    @content;
+  }
+}
+
+@mixin tall-xxl {
+  @media (min-height: #{$screen-tall-xxl}) {
+    @content;
+  }
+}
+
+// Landscape
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+// Portrait
+@mixin portrait {
+  @media (orientation: portrait) {
+    @content;
+  }
+}

@@ -1,0 +1,26 @@
+@import '../styles/variables.module.scss';
+@import '../styles/mixin.module.scss';
+
+.container {
+  position: relative;
+  width: 100vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  & h2 {
+    font-family: 'HIROMISAKE';
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 5rem;
+
+    @include l {
+      font-size: 8rem;
+    }
+  }
+}

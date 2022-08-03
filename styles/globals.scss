@@ -1,0 +1,63 @@
+@import '~bootstrap/scss/bootstrap';
+
+@import 'styles/variables.module.scss';
+@import '../styles/mixin.module.scss';
+
+@import 'styles/base/base';
+@import 'styles/base/typography';
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@400;700&family=Space+Grotesk:wght@700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  // Set your font family here
+  font-family: 'Source Sans Pro', 'Antonio', 'Anton', 'Lato', sans-serif;
+  position: relative;
+
+  overflow-x: hidden;
+  overscroll-behavior: none;
+
+  &::-webkit-scrollbar {
+    display: block;
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    color: #3d3a50;
+    background-color: #3d3a50;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    color: #fdf695;
+    background-color: #fdf695;
+  }
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+html {
+  height: -webkit-fill-available;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'HIROMISAKE';
+  src: url('../public/assets/font/HIROMISAKE.ttf');
+}

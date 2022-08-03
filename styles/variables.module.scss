@@ -1,0 +1,36 @@
+$black: #1b1b1b;
+$red: #b34044;
+$grey: #a0a0a0;
+$white: #ffffff;
+
+$screen-xs: 320px;
+$screen-s: 480px;
+$screen-m: 768px;
+$screen-l: 1024px;
+$screen-xl: 1200px;
+$screen-xxl: 1400px;
+$screen-xxxl: 1600px;
+$screen-xxxxl: 1700px;
+$screen-max: 3400px;
+
+$screen-tall-l: 768px;
+$screen-tall-xl: 875px;
+$screen-tall-xxl: 1001px;
+
+:export {
+  black: $black;
+  red: $red;
+  grey: $grey;
+  white: $white;
+  screenXS: $screen-xs;
+  screenS: $screen-s;
+  screenM: $screen-m;
+  screenL: $screen-l;
+  screenXL: $screen-xl;
+  screenXXL: $screen-xxl;
+  screenXXXL: $screen-xxxl;
+  screenMAX: $screen-max;
+  screenTallL: $screen-tall-l;
+  screenTallXL: $screen-tall-xl;
+  screenTallXXL: $screen-tall-xxl;
+}

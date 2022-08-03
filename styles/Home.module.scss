@@ -1,0 +1,105 @@
+@import '../styles/variables.module.scss';
+@import '../styles/mixin.module.scss';
+
+.container {
+  position: relative;
+  width: 100vw;
+  min-height: 100rem;
+
+  background-image: url('../public/assets/background/background_premint.png');
+  background-position: 50% -15vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include l {
+    min-height: 127rem;
+    background-size: contain;
+  }
+
+  @include xxl {
+    min-height: 150rem;
+    background-size: contain;
+  }
+
+  @include xxxl {
+    min-height: 180rem;
+    background-size: contain;
+  }
+
+  @include xxxxl {
+    min-height: 180rem;
+    background-size: contain;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 12rem;
+
+  @include l {
+    margin-top: 20rem;
+  }
+
+  &_cta {
+    margin-top: 22rem;
+
+    @include l {
+      margin-top: 13rem;
+    }
+
+    @include xl {
+      margin-top: 30rem;
+    }
+
+    @include xxl {
+      margin-top: 30rem;
+    }
+
+    @include xxxl {
+      margin-top: 45rem;
+    }
+  }
+
+  &_cta2 {
+    margin-top: 15rem;
+
+    @include l {
+      margin-top: 3rem;
+    }
+
+    @include xl {
+      margin-top: 20rem;
+    }
+
+    @include xxl {
+      margin-top: 20rem;
+    }
+
+    @include xxxl {
+      margin-top: 32rem;
+    }
+  }
+}
+
+.preMint {
+  font-family: 'HIROMISAKE';
+  color: white;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 2rem;
+  cursor: default;
+
+  @include l {
+    margin-top: 5rem;
+    font-size: 4.8rem;
+  }
+
+  @include xl {
+    margin-top: 2rem;
+    font-size: 4.8rem;
+  }
+}
