@@ -10,7 +10,8 @@ const paraContent = [
   'However, we have analysed why meme NFTs are popping off while NFTs that “deserves to m00n” are tanking',
   'Everyone is tired of NFT projects promising things - that don’t happen or take too long to deliver.',
   'A lot of utility is tied to “merch” and well..that isn’t utility lol - worse, the only utility is the floor price utilities of chief toad',
-  'No more years of waiting for things to happen. The utility is now and right in our hands. Join our Discord to find out more',
+  'No more years of waiting for things to happen. The utility is now and right in our hands. Join our Discord to find out more!',
+  'Chief Toad is CC0-licensed.',
 ];
 
 const utilsContent = [
